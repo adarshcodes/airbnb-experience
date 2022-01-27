@@ -1,0 +1,10 @@
+.navigation {
+	@include shadow;
+	@include flex-start;
+	height: 7rem;
+	padding: 1rem 3rem;
+
+	&__logo {
+		width: 10rem;
+	}
+}

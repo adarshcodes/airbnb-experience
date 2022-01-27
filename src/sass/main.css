@@ -1,5 +1,29 @@
-.app {
-  font-size: 5rem;
-  color: aqua;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.navigation {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 7rem;
+  padding: 1rem 3rem;
+}
+
+.navigation__logo {
+  width: 10rem;
 }
 /*# sourceMappingURL=main.css.map */
