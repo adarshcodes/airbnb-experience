@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,IAAI,CAAC;EACJ,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;CACX",
+    "sources": [
+        "main.scss",
+        "abstract/_mixins.scss",
+        "abstract/_variables.scss",
+        "base/_animations.scss",
+        "base/_base.scss",
+        "base/_typography.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
