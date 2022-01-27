@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: #ffffff;
   height: 7rem;
   padding: 1rem 3rem;
 }
