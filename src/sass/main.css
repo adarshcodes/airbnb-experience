@@ -14,6 +14,10 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .navigation {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   display: flex;
@@ -21,10 +25,43 @@ body {
   align-items: center;
   background-color: #ffffff;
   height: 7rem;
-  padding: 1rem 3rem;
+  padding: 1rem 10rem;
 }
 
 .navigation__logo {
   width: 10rem;
+}
+
+.hero {
+  padding: 7rem 10rem;
+}
+
+.hero--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--container__img {
+  width: 90rem;
+}
+
+.hero--text {
+  padding: 7rem 0;
+}
+
+.hero--text__heading {
+  font-size: 7.5rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.hero--text__para {
+  margin-top: 2rem;
+  font-size: 3.3rem;
+  font-weight: 300;
+  color: #222222;
+  max-width: 70rem;
 }
 /*# sourceMappingURL=main.css.map */

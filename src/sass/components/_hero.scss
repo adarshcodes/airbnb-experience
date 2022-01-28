@@ -1,0 +1,28 @@
+.hero {
+	padding: 7rem 10rem;
+
+	&--container {
+		@include flex-row;
+
+		&__img {
+			width: 90rem;
+		}
+	}
+
+	&--text {
+		padding: 7rem 0;
+		&__heading {
+			font-size: 7.5rem;
+			color: $color-primary-dark;
+			font-weight: 700;
+		}
+
+		&__para {
+			margin-top: 2rem;
+			font-size: 3.3rem;
+			font-weight: 300;
+			color: $color-secondary-dark;
+			max-width: 70rem;
+		}
+	}
+}
