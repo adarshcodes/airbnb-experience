@@ -19,7 +19,7 @@ class Card extends React.Component {
 					<div className="card--details">
 						<div className="card--details__rating">
 							<img src={StarImg} alt="star" className="card--details__star" />
-							<p className="card--details__rating-score">5</p>
+							<p className="card--details__rating-score">5.0</p>
 							<p className="card--details__user-count">(6)</p>
 							<p className="card--details__user-country">&#xb7; USA</p>
 						</div>

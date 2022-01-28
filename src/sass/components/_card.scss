@@ -1,5 +1,9 @@
-.card {
+.card-container {
 	padding: 5rem 0 5rem 10rem;
+}
+
+.card {
+	width: 26.4rem;
 
 	&--img-container {
 		&__img {
@@ -22,12 +26,37 @@
 	}
 
 	&--details {
+		margin-top: 0.5rem;
+		font-size: 1.7rem;
+
 		&__rating {
 			@include flex-start;
 		}
 
 		&__star {
-			width: 1.8rem;
+			width: 1.5rem;
+			margin-right: 0.5rem;
+		}
+
+		&__rating-score {
+			margin-right: 0.5rem;
+		}
+
+		&__user-count,
+		&__user-country {
+			margin-right: 0.5rem;
+			color: $color-secondary-white;
+			font-weight: 300;
+		}
+
+		&__info {
+			font-size: 1.8rem;
+			font-weight: 400;
+			margin: 1rem 0;
+		}
+
+		&__pricing {
+			font-size: 1.8rem;
 		}
 	}
 }

@@ -65,8 +65,12 @@ body {
   max-width: 70rem;
 }
 
-.card {
+.card-container {
   padding: 5rem 0 5rem 10rem;
+}
+
+.card {
+  width: 26.4rem;
 }
 
 .card--img-container__img {
@@ -86,6 +90,11 @@ body {
   border-radius: 0.5rem;
 }
 
+.card--details {
+  margin-top: 0.5rem;
+  font-size: 1.7rem;
+}
+
 .card--details__rating {
   display: flex;
   justify-content: flex-start;
@@ -93,6 +102,27 @@ body {
 }
 
 .card--details__star {
-  width: 1.8rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.card--details__rating-score {
+  margin-right: 0.5rem;
+}
+
+.card--details__user-count, .card--details__user-country {
+  margin-right: 0.5rem;
+  color: #918e9b;
+  font-weight: 300;
+}
+
+.card--details__info {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.card--details__pricing {
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */
