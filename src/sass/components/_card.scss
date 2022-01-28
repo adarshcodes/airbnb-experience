@@ -1,0 +1,33 @@
+.card {
+	padding: 5rem 0 5rem 10rem;
+
+	&--img-container {
+		&__img {
+			border-radius: 1.5rem;
+			position: relative;
+		}
+
+		&__status {
+			position: absolute;
+			top: 13rem;
+			left: 11rem;
+			padding: 0.5rem 1rem;
+
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			color: $color-secondary-dark;
+			background-color: $color-primary-white;
+			border-radius: 0.5rem;
+		}
+	}
+
+	&--details {
+		&__rating {
+			@include flex-start;
+		}
+
+		&__star {
+			width: 1.8rem;
+		}
+	}
+}
