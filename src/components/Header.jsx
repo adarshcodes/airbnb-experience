@@ -6,18 +6,7 @@ import CardData from "../cardData";
 export default class Header extends React.Component {
 	render() {
 		const newCard = CardData.map((item) => {
-			return (
-				<Card
-					key={item.id}
-					img={item.coverImg}
-					ratingScore={item.stats.rating}
-					userCount={item.stats.reviewCount}
-					userCountry={item.location}
-					info={item.title}
-					pricing={item.price}
-					status={item.openSpots}
-				/>
-			);
+			return <Card key={item.id} item={item} />;
 		});
 
 		return (
