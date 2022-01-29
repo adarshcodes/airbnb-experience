@@ -67,21 +67,26 @@ body {
 
 .card-container {
   padding: 5rem 0 5rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card {
   width: 26.4rem;
+  position: relative;
 }
 
 .card--img-container__img {
   border-radius: 1.5rem;
-  position: relative;
 }
 
 .card--img-container__status {
   position: absolute;
-  top: 13rem;
-  left: 11rem;
+  top: 1rem;
+  left: 1rem;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   text-transform: uppercase;

@@ -1,20 +1,22 @@
 .card-container {
 	padding: 5rem 0 5rem 10rem;
+	@include flex-row;
+	justify-content: space-between;
 }
 
 .card {
 	width: 26.4rem;
+	position: relative;
 
 	&--img-container {
 		&__img {
 			border-radius: 1.5rem;
-			position: relative;
 		}
 
 		&__status {
 			position: absolute;
-			top: 13rem;
-			left: 11rem;
+			top: 1rem;
+			left: 1rem;
 			padding: 0.5rem 1rem;
 
 			font-size: 1.5rem;
