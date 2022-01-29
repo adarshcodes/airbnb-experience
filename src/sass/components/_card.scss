@@ -5,12 +5,13 @@
 }
 
 .card {
-	width: 26.4rem;
+	width: 36.4rem;
 	position: relative;
 
 	&--img-container {
 		&__img {
 			border-radius: 1.5rem;
+			width: 100%;
 		}
 
 		&__status {

@@ -2,46 +2,29 @@ import React from "react";
 import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Card from "./Card";
-
-// importing images
-import UserImg from "../images/katie-zaferes.png";
-
+import CardData from "../cardData";
 export default class Header extends React.Component {
 	render() {
+		const newCard = CardData.map((item) => {
+			return (
+				<Card
+					key={item.id}
+					img={item.coverImg}
+					status="Sold out"
+					ratingScore={item.stats.rating}
+					userCount={item.stats.reviewCount}
+					userCountry={item.location}
+					info={item.title}
+					pricing={item.price}
+				/>
+			);
+		});
+
 		return (
 			<header className="header">
 				<NavBar />
-				{/* <Hero /> */}
-				<div className="card-container">
-					<Card
-						img={UserImg}
-						status="Sold out"
-						ratingScore="5.0"
-						userCount="6"
-						userCountry="USA"
-						info="Life lessons with Katie Zaferes"
-						pricing="$136"
-					/>
-					<Card
-						img={UserImg}
-						status="Sold out"
-						ratingScore="5.0"
-						userCount="6"
-						userCountry="USA"
-						info="Life lessons with Katie Zaferes"
-						pricing="$136"
-					/>
-					<Card
-						img={UserImg}
-						status="Sold out"
-						ratingScore="5.0"
-						userCount="6"
-						userCountry="USA"
-						info="Life lessons with Katie Zaferes"
-						pricing="$136"
-					/>
-				</div>
-				;
+				<Hero />
+				<div className="card-container">{newCard}</div>;
 			</header>
 		);
 	}

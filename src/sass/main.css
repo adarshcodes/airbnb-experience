@@ -75,12 +75,13 @@ body {
 }
 
 .card {
-  width: 26.4rem;
+  width: 36.4rem;
   position: relative;
 }
 
 .card--img-container__img {
   border-radius: 1.5rem;
+  width: 100%;
 }
 
 .card--img-container__status {
