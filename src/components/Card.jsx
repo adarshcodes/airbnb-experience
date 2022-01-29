@@ -3,6 +3,13 @@ import StarImg from "../images/star.png";
 
 class Card extends React.Component {
 	render() {
+		let badgeText;
+		if (this.props.status === 0) {
+			badgeText = "Sold out";
+		} else if (this.props.userCountry === "Online") {
+			badgeText = "Online";
+		}
+
 		return (
 			<div className="card">
 				<div className="card--img-container">
@@ -11,7 +18,9 @@ class Card extends React.Component {
 						alt="user"
 						className="card--img-container__img"
 					/>
-					<div className="card--img-container__status">{this.props.status}</div>
+					{badgeText && (
+						<div className="card--img-container__status">{badgeText}</div>
+					)}
 				</div>
 
 				<div className="card--details">
@@ -29,7 +38,7 @@ class Card extends React.Component {
 					</div>
 					<h4 className="card--details__info">{this.props.info}</h4>
 					<p className="card--details__pricing">
-						<b>From {this.props.pricing} /</b> person
+						<b>From ${this.props.pricing} /</b> person
 					</p>
 				</div>
 			</div>

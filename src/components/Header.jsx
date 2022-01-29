@@ -10,12 +10,12 @@ export default class Header extends React.Component {
 				<Card
 					key={item.id}
 					img={item.coverImg}
-					status="Sold out"
 					ratingScore={item.stats.rating}
 					userCount={item.stats.reviewCount}
 					userCountry={item.location}
 					info={item.title}
 					pricing={item.price}
+					status={item.openSpots}
 				/>
 			);
 		});
